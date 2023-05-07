@@ -52,6 +52,7 @@ export default {
       .catch( err => {
         let msg = err.response.data.json.join(',')
         alert('Error adding student\n' + msg)
+        
       })
     },
     studentsArrivedOrLeft(student, present) {
