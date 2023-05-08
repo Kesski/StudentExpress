@@ -50,8 +50,8 @@ export default {
         this.updateStudents()
       })
       .catch( err => {
-        let msg = err.response.data.json.join(',')
-        alert('Error adding student\n' + msg)
+        //let msg = err.response.data.json.join(',')
+        alert('Error adding student. Star ID must be unique.' )//+ msg)
         
       })
     },
